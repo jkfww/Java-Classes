@@ -1,0 +1,4 @@
+Zmodyfikuj klasę EchoServer z przykładu powyżej laboratorium, tak aby umożliwiała jednoczesne obsłużenie kilku klientów.
+Sewer ma za zadanie szukanie liczb pierwszych z zakresu podanego przez klienta w trakcie komunikacji: np. (10;100).
+Pierwsza wersja serwera (na zajęciach) ma generować wątek za każdym razem gdy nadchodzi połączenie z klientem.
+Finalna wersja serwera powinna implementować wzorzec Thread Pool, ograniczając ilość wątków które obsługują klientów.
