@@ -1,0 +1,2 @@
+Zmodyfikuj kod funkcji apply z DataFrame tak aby wykonywała się równolegle na wszystkich procesorach maszyny.
+Zmodyfikuj klasę Adder w taki sposób aby możliwe było dodanie do siebie dwóch serii danych (Series), element po elemencie
