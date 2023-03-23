@@ -1,0 +1,3 @@
+Przetestować działanie przykładu. Co się stanie gdy będziemy chcieli podłączyć więcej niż jednego klienta do EchoServera? Zmodyfikuj EchoServer  w taki sposób, żeby wykonywał operacje dodawania. Np. dla wejścia "12+12" zwróci "24".
+Dodaj pozostałe proste operacje  matematyczne 
+Program powinien obsługiwać operacje składajace się z kilku liczb i operatorów: 23+34*2, ale nie musi brać pod uwagę priorytetów operatorów.
