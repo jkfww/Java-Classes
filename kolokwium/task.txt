@@ -1,0 +1,33 @@
+Zaimplementuj następujące klasy i funkcjonalności:
+Kolokwium - Jezyk Java
+
+
+Interfejs Movable zawierający metody:
+void MoveTo(Possition possition, World world) 
+Metoda wyrzuca wyjatek OutsiteTheWorldException jesli pozycja jest poza granicami świata
+void MoveBack();
+Klasa Possition:
+Zawiera pola prywatne double x i double y
+Zawiera konstruktor parametrowy Possition(double x , double y)
+Zawiera gettery i settery dla pól prywatnych
+Zawiera metode toString() wyświetlającą pozycje w formacie (x,y)
+Klasa Treasure dziedzicząca po Possition
+Klasa Robot
+Zawiera listę przechowującą obiekty Possition, z których ostatni element na liście wskazuje aktualną pozycję
+Implementuje interfejs Movable
+Posiada metode getPossition()
+Wyjątek OutsiteTheWorldException typu checked
+Klasa World
+Zwiera dwa pola typu double określające rozmiary świata
+Zawiera konstruktor parametrowy pozwalający ustawić rozmiary świata.
+Zawiera konstruktor bezparametrowy ustawiający rozmiary domyślnie na 100x100
+Konstruktor rzuca wyjątek BoundaryException typu checked gdy rozmiary są wartościami <= 0
+Konstruktor losuje jedno pole na planszy i "umieszcza" tam obiekt typu Treasure
+Klasa Main która zawiera metodę main odpowiedzialną za uruchomienie programu i:
+Z listy parametrów programu odczytuje rozmiary świata i tworzy obiekt typu World oraz Robot (pozycja robota domyślnie to 0,0)
+Wyświetla menu z 3 opcjami:
+moveLeft/Right/Up/Down -- Przesuwa robota o jedno pole we wskazanym kierunku. Jeśli robot zmniejszył swoją odległość od skarbu (obiektu Treasure) wyświetlany jest komunikat "Hot!" w jeśli zwiększył odległość "Cold..."
+moveBack -- przesuwa robota na wcześniejszą pozycje
+Print robot location - wyświetla aktualna pozycje robota
+Exit -- zamyka program
+Wszystkie klasy mają się znaleźć w pakiecie kolos
